@@ -13,7 +13,7 @@ const searchUser = document.getElementById('searchUser').addEventListener('keyup
       .then(data => {
         if (data.profile.message === 'Not Found') {
           //  show alert
-          
+          ui.showAlert();
         } else {
           // show profile
           ui.showProfile(data.profile);
@@ -21,6 +21,6 @@ const searchUser = document.getElementById('searchUser').addEventListener('keyup
     })
   } else {
     // clear profile
-
+    ui.clearProfile();
   }
 });

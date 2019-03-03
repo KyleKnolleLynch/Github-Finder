@@ -30,4 +30,16 @@ class UI {
     <div id="repos"></div>
    `;
   }
+
+  showAlert() {
+    this.profile.innerHTML = `
+    <div class="alert alert-danger">Please enter valid username/profile</div>
+    `;
+  }
+
+
+  clearProfile() {
+    this.profile.innerHTML = '';
+  }
+
 }
